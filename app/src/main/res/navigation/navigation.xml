@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homepage">
+
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.fitdroid.Homepage"
+        android:label="homepage"
+        tools:layout="@layout/homepage" >
+        <action
+            android:id="@+id/action_homepage_to_goals"
+            app:destination="@id/goals" />
+
+        <action
+            android:id="@+id/action_homepage_to_food"
+            app:destination="@id/calorieListFragment" />
+        <action
+            android:id="@+id/action_homepage_to_workout"
+            app:destination="@id/workout" />
+        <action
+            android:id="@+id/action_homepage_to_userModel"
+            app:destination="@id/userModel" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/goals"
+        android:name="com.example.fitdroid.Goals"
+        android:label="goals"
+        tools:layout="@layout/goals" >
+        <action
+            android:id="@+id/action_goals_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calorieListFragment"
+        android:name="com.example.fitdroid.calorielist.CalorieListFragment"
+        android:label="food">
+        <action
+            android:id="@+id/action_food_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_calorieListFragment_to_calorieItemFragment"
+            app:destination="@id/calorieItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workout"
+        android:name="com.example.fitdroid.Workout"
+        android:label="workout"
+        tools:layout="@layout/workout" >
+        <action
+            android:id="@+id/action_workout_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_workout_to_normalweight"
+            app:destination="@id/normalweight" />
+        <action
+            android:id="@+id/action_workout_to_homepage2"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_workout_to_overweight"
+            app:destination="@id/overweight" />
+        <action
+            android:id="@+id/action_workout_to_underweight"
+            app:destination="@id/underweight" />
+        <action
+            android:id="@+id/action_workout_to_normalschedule"
+            app:destination="@id/normalschedule" />
+        <action
+            android:id="@+id/action_workout_to_overschedule"
+            app:destination="@id/overschedule" />
+        <action
+            android:id="@+id/action_workout_to_underschedule"
+            app:destination="@id/underschedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/userModel"
+        android:name="com.example.fitdroid.userData.UserFragment"
+        android:label="users"
+        tools:layout="@layout/user_fragment" >
+        <action
+            android:id="@+id/action_userModel_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_userModel_to_userScaleFragment"
+            app:destination="@id/userScaleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userScaleFragment"
+        android:name="com.example.fitdroid.user_scale_data.UserScaleFragment"
+        android:label="UserScaleFragment"
+        tools:layout="@layout/user_scale_fragment">
+        <action
+            android:id="@+id/action_userScaleFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calorieItemFragment"
+        android:name="com.example.fitdroid.userData.CalorieItemFragment"
+        android:label="CalorieItemFragment" >
+        <argument
+            android:name="calorieId"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.fitdroid.userProfile.UserProfileFragment"
+        android:label="UserProfileFragment"
+        tools:layout="@layout/user_profile_fragment">
+        <action
+            android:id="@+id/action_userProfileFragment_to_homepage"
+            app:destination="@id/homepage" />
+    </fragment>
+    <fragment
+        android:id="@+id/normalweight"
+        android:name="com.example.fitdroid.schedule.Normalweight"
+        android:label="Normalweight" >
+        <action
+            android:id="@+id/action_normalweight_to_workout"
+            app:destination="@id/workout" />
+        <action
+            android:id="@+id/action_normalweight_to_homepage"
+            app:destination="@id/homepage" />
+        <argument
+            android:name="bmi"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_normalweight_to_normalschedule"
+            app:destination="@id/normalschedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/overweight"
+        android:name="com.example.fitdroid.schedule.Overweight"
+        android:label="Overweight" >
+        <action
+            android:id="@+id/action_overweight_to_workout"
+            app:destination="@id/workout" />
+        <action
+            android:id="@+id/action_overweight_to_homepage"
+            app:destination="@id/homepage" />
+        <argument
+            android:name="bmi"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_overweight_to_overschedule"
+            app:destination="@id/overschedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/underweight"
+        android:name="com.example.fitdroid.schedule.Underweight"
+        android:label="underweight"
+        tools:layout="@layout/underweight" >
+        <action
+            android:id="@+id/action_underweight_to_workout"
+            app:destination="@id/workout" />
+        <action
+            android:id="@+id/action_underweight_to_homepage"
+            app:destination="@id/homepage" />
+        <argument
+            android:name="bmi"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_underweight_to_underschedule"
+            app:destination="@id/underschedule" />
+    </fragment>
+    <fragment
+        android:id="@+id/normalschedule"
+        android:name="com.example.fitdroid.schedule.Normalschedule"
+        android:label="normalschedule"
+        tools:layout="@layout/normalschedule" >
+        <action
+            android:id="@+id/action_normalschedule_to_workout"
+            app:destination="@id/workout" />
+    </fragment>
+    <fragment
+        android:id="@+id/overschedule"
+        android:name="com.example.fitdroid.schedule.Overschedule"
+        android:label="overschedule"
+        tools:layout="@layout/overschedule" >
+        <action
+            android:id="@+id/action_overschedule_to_workout"
+            app:destination="@id/workout" />
+    </fragment>
+    <fragment
+        android:id="@+id/underschedule"
+        android:name="com.example.fitdroid.schedule.Underschedule"
+        android:label="underschedule"
+        tools:layout="@layout/underschedule" >
+        <action
+            android:id="@+id/action_underschedule_to_workout"
+            app:destination="@id/workout" />
+    </fragment>
+</navigation>

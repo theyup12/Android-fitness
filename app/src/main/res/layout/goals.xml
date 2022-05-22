@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable  name="goals"
+            type="com.example.fitdroid.Goals">
+
+        </variable>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Goals">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="260dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeButton">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/goalDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="97dp"
+            android:layout_marginBottom="120dp"
+            android:ems="10"
+            android:hint="Number of Weeks"
+            android:inputType="date"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineChart" />
+
+        <Button
+            android:id="@+id/goalDateButton"
+            android:layout_width="119dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="54dp"
+            android:text="Update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/goalDateText" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="126dp"
+            android:layout_marginBottom="18dp"
+            android:text="Goal End Date"
+            android:textAlignment="center"
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/goalDateText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineChart" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

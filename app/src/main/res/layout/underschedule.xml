@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".schedule.Underschedule">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Weekly Schedule to Gain Weight "
+        android:textColor="#6AAF4C"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Back" />
+
+    <TextView
+        android:id="@+id/Monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text=" Monday: Chest(3 sets of 10–12 exercises): Bench press, Decline press, Incline press,Push-ups "
+        app:layout_constraintTop_toBottomOf="@+id/label"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text=" Tuesday: Back and Core(3 sets of 10–12 exercises):Pull-ups, Bent-over rows, Lat pull-down"
+        app:layout_constraintTop_toBottomOf="@+id/Monday"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=" Wednesday: Rest. May go for a bike ride or head outdoors for a hike"
+        app:layout_constraintTop_toBottomOf="@+id/Tuesday"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text=" Thursday: Shoulders and Traps(3 sets of 10–12 exercises): Machine shoulder press, Lateral raises, Front raises"
+        app:layout_constraintTop_toBottomOf="@+id/Wednesday"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text=" Friday: Legs(3 sets of 10–12 exercises):Leg extensions, Leg curls, Front squats, Back squats"
+        app:layout_constraintTop_toBottomOf="@+id/Thursday"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Saturday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text=" Saturday: Arms(3 sets of 10–12 exercises): Triceps push-downs, Cable curls,Seated dumbbell arm curls"
+        app:layout_constraintTop_toBottomOf="@+id/Friday"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/Sunday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text=" Sunday: Rest"
+        app:layout_constraintTop_toBottomOf="@+id/Saturday"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

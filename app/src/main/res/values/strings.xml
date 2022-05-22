@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FitDroid</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ask_age">How old are you?</string>
+</resources>
