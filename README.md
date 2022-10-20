@@ -29,7 +29,7 @@ Many people are experiencing rising stress/anxiety levels in their daily lives t
 Profile Page(Andy Cao) - Create a profile page for users to change the information. 
 Time-tracker - 60 seconds time limit
 
-![](Images/set_up.PNG)  |  ![](Images/settings)
+![](Images/set_up.PNG)  |  ![](Images/settings.PNG)
 
 4. Weight Goals and Analytics (David Bonnaud) - Create a page that visualizes weight loss progress and track through weekly weight check-ins as well as provide information to help reach goals better.
 
