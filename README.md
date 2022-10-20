@@ -18,13 +18,19 @@ Many people are experiencing rising stress/anxiety levels in their daily lives t
 
 ## Features
 1. Calorie Tracker (Kenny Tran) - This feature will allow users to track their calories per day by logging their data every time they eat or drink. The tracker will add up the total of calories and provide a list representing all things they’ve ingested 
+
 ![](Images/cal_tracker.PNG)
 
 2. Recommended Weekly Workout Schedule (Triet Le)> - This feature will allow users to input their height + weight and their body type desired. The app will use that information to decide the suitable exercises for each day. It may include the type of exercise, duration, image to illustrate... 
+
 ![](Images/week_schedule.PNG)
+
 3. Basic Information (Andy Cao) - This feature will ask the user for basic information at the beginning of the app. For example, weight goal, activity level, sex, birth, and body weight. 
 Profile Page(Andy Cao) - Create a profile page for users to change the information. 
+Time-tracker - 60 seconds time limit
+
 ![](Images/set_up.PNG)  |  ![](Images/settings)
 
 4. Weight Goals and Analytics (David Bonnaud) - Create a page that visualizes weight loss progress and track through weekly weight check-ins as well as provide information to help reach goals better.
+
 ![](Images/weight_goal.PNG)
